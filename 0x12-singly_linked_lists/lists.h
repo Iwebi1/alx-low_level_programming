@@ -4,17 +4,16 @@
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
- * @len: string lenght
- * @next: pointed to the next node
+ * @len: length of the string
+ * @next: points to the next node
  *
- * Description: node structure for singly linked list
- * for Holberton project
+ * Description: singly linked list node structure
  */
 typedef struct list_s
 {
-	character *str;
-	unsigned int len;
-	structure list_s *next;
+    char *str;
+    unsigned int len;
+    struct list_s *next;
 } list_t;
 
 list_t *add_node(list_t **head, const char *str);
